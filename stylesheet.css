@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "OpenSans";
+    src:
+        url('OpenSans.woff') format('woff'),
+        url('OpenSans.ttf') format('truetype');
+}
+
+:root {
+    --title-color: blue;
+}
+
+body {
+    background-color: #B2E2FD;
+    font-family: 'OpenSans';
+}
+
+span {
+    color: var(--title-color);
+}
