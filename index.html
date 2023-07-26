@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>$avr</title>
+    <meta charset="utf-8">
+    <meta name="description" content="$avr">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {background-color: #B2E2FD;}
+    </style>
+</head>
+<body>
+    <script></script>
+    <header><strong>$avr</strong></header>
+    <nav>
+        <ul>
+            <li><a href="">Account</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+        <button id="signup">Sign Up</button>
+    </nav>
+    <main>
+        <h1>Welcome to <span class="app">$avr</span></h1>
+        <article>
+            <h2>The best budgeting app there is!</h2>
+            <span class="app">$avr</span> can help you keep track of your spending.
+        </article>
+        <video width="960" height="480" controls>
+            <source src="savrapp.mp4" type="video/mp4">
+            <source src="savrapp.mp4" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        <div>
+            <h2>Analyze Spending</h2>
+            <button>Demo</button>
+            <svg width="400" height="300">
+                <circle cx="200" cy="150" r="100" stroke="green" stroke-width="1" fill="yellow" />
+            </svg>
+            <template>
+                <svg width="400" height="300">
+                    <circle cx="200" cy="150" r="100" stroke="green" stroke-width="1" fill="yellow" />
+                </svg>
+            </template>
+            <br>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+                <source src="audio.wav" type="audio/wav">
+                Your browser does not support this audio element.
+            </audio>
+            <hr>
+            <h2>Budget</h2>
+            <p><b>$avr</b> can help you save money.</p>
+            <picture>
+                <source media="(min-width:650px)" srcset="pictureL.jpg">
+                <source media="(min-width:350px)" srcset="pictureS.jpg">
+                <img src="fallback.jpg" alt="Saving Money">
+            </picture>
+            <figure>
+                <img src="SavrCalculate.jpg" alt="$avr showing calculations" width="500" height="600">
+                <figcaption>Saving calculator feature.</figcaption>
+              </figure>
+            <aside>
+                <p>
+                    <b>$avr</b> can keep track of your subscriptions as well!
+                </p>
+            </aside>
+            <hr>
+            <h2>Features</h2>
+            <ol>
+                <li>Add Expenses</li>
+                <li>View Categories</li>
+                <li>Income and Savings Calculation</li>
+            </ol>
+            <pre><code>Complex algorithms</code>
+    to help
+        analyze
+            spending.</pre>
+        </div>
+        <h3><em>Free Trial!</em></h3>
+        <hr>
+        <h3>Here's a Demo!</h3>
+        <iframe src="demoUrl" title="demo"></iframe>
+        <hr>
+        <form>
+            <fieldset>
+                <legend>A bit of information about yourself:</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="first name"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="last name">
+                <br><br>
+                <label for="cars">Choose your use case:</label><br>
+                <select name="cars" id="cars">
+                    <optgroup label="Student">
+                        <option value="volvo">Undergrad</option>
+                        <option value="volvo">Grad</option>
+                    </optgroup>
+                    <option value="saab">Business Owner</option>
+                    <option value="mercedes">Employee</option>
+                    <option value="audi">Retired</option>
+                </select>
+                <br><br>
+                <textarea rows="1" cols="26">If you have a Discount Code</textarea>
+                <br><br>
+                <button>Sign Up!</button>
+            </fieldset>
+          </form>
+          <br>
+          <section class="experimental">
+            <h3>Here's a drawing of $avr</h3>
+            <canvas id="canvas" width="500" height="300" style="border:1px solid #000000;">
+            </canvas>
+            <script>
+                var canvas = document.getElementById("canvas");
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = "#00CC00";
+                ctx.fillRect(0, 0, 250, 150);
+            </script>
+        </section>
+        <h3>Add Expense</h3>
+        <h4>Subscribe Now!</h4>
+        <table>
+            <caption>Subscription:</caption>
+            <colgroup>
+                <col span="1" style="background-color:rgb(0, 255, 221)">
+                <col span="1" style="background-color:rgb(255, 153, 0)">
+            </colgroup>
+            <tr>
+                <th>Time</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td>Weekly</td>
+                <td>$4.99</td>
+            </tr>
+            <tr>
+                <td>Monthly</td>
+                <td>$14.99</td>
+            </tr>
+            <tr>
+                <td>Yearly</td>
+                <td>$144.99</td>
+            </tr>
+        </table>
+        <label for="subscription">Choose your subscription cycle:</label>
+        <br>
+        <input list="subscriptions" name="subscription" id="subscription">
+
+        <datalist id="subscriptions">
+            <option value="Weekly">
+            <option value="Monthly">
+            <option value="Yearly">
+        </datalist>
+    </main>
+    <br><br><br><br>
+    <footer>
+        <details>
+            <summary><i>Contact Us</i></summary>
+            <p>(420) 123-4567</p>
+        </details>
+    </footer>
+</body>
+</html>
