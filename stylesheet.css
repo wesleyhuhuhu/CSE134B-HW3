@@ -17,3 +17,51 @@ body {
 span {
     color: var(--title-color);
 }
+
+ul {
+    list-style-type: none;
+    
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+    overflow: hidden;
+    animation: slide-right 2s;
+}
+
+@keyframes slide-right {
+    from {
+        margin-left: -100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+h1 span {
+    padding-left: 1vw;
+    font-size: 3rem;
+    transition: all 2s;
+}
+
+h1 span:hover {
+    font-size: 3em;
+}
+
+svg :hover {
+    transform: skew(0deg, -2deg)
+    scale(1.1)
+    translateY(-1vh)
+}
+
+fieldset {
+    visibility: visible;
+    transition: all 2s;
+}
