@@ -60,6 +60,11 @@ body {
     font-family: 'OpenSans', Arial, sans-serif;
 }
 
+span > i {
+    font-size: 0.1em;
+    vertical-align: text-top;
+}
+
 nav {
     display: grid;
     grid: 'links links button';
@@ -96,7 +101,7 @@ nav ul li {
     background-color: #101010;
 }
 
-span {
+.app {
     color: var(--title-color);
 }
 
@@ -248,7 +253,7 @@ ol {
         margin-top: 2%;
         margin-left: 88%;
     }
-    h1 {
+    main {
         margin-top: 5vh;
     }
     nav {
