@@ -7,16 +7,23 @@
 
 @media screen and (prefers-reduced-motion: reduce) {  
     * {
-      /* Very short durations means JavaScript that relies on events still works */
       animation-duration: 0.001ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.001ms !important;
     }
 }
 
+/*High contrast*/
 @media (prefers-contrast: high) {
     body {
         background-color: var(--high-contrast);
+    }
+}
+
+/*For touchscreen devices that can't hover*/
+@media (hover: none) {
+    body {
+        opacity: 1;
     }
 }
 
@@ -36,7 +43,29 @@
 
 body {
     background-color: #B2E2FD;
-    font-family: 'OpenSans';
+    font-family: 'OpenSans', sans-serif;
+}
+
+nav {
+    display: grid;
+    grid: 'links links button';
+    height: 2em;
+    margin-bottom: 5vh;
+}
+
+nav button {
+    grid-area: button;
+}
+
+nav ul {
+    padding: 0;
+    display: grid;
+    grid: 1em / auto auto auto;
+    grid-area: links;
+}
+
+nav ul li {
+    text-align: center;
 }
 
 span {
@@ -80,6 +109,10 @@ h1 span:hover {
     font-size: 3em;
 }
 
+article {
+    text-align: center;
+}
+
 svg :hover {
     transform: skew(0deg, -2deg)
     scale(1.1)
@@ -109,6 +142,7 @@ canvas {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 5vh;
 }
 
 .card section:nth-of-type(1){
