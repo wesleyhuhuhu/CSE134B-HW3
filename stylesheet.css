@@ -22,9 +22,6 @@
 
 /*For touchscreen devices that can't hover*/
 @media (hover: none) {
-    body {
-        background-color: black;
-    }
     canvas {
         opacity: 1;
     }
@@ -33,9 +30,6 @@
     }
 }
 @media (pointer: coarse) {
-    body {
-        background-color: black;
-    }
     canvas {
         opacity: 1;
     }
@@ -217,5 +211,14 @@ ol {
 
     article {
         font-size: 2vh;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    canvas {
+        opacity: 1;
+    }
+    form button {
+        opacity: 1;
     }
 }
