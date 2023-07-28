@@ -1,8 +1,11 @@
 @font-face {
     font-family: "OpenSans";
     src:
-        url('OpenSans.woff') format('woff'),
-        url('OpenSans.ttf') format('truetype');
+        url('OpenSans.woff2') format('woff2'), /* Super Modern Browsers */
+        url('OpenSans.woff') format('woff'), /* Pretty Modern Browsers */
+        url('OpenSans.eot') format('embedded-opentype'), /* IE6-IE11 */
+        url('OpenSans.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('OpenSans.svg') format('svg'); /* Legacy iOS */
 }
 
 @media screen and (prefers-reduced-motion: reduce) {  
@@ -54,7 +57,7 @@
 
 body {
     background-color: #B2E2FD;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'OpenSans', Arial, sans-serif;
 }
 
 nav {
