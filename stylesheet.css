@@ -5,8 +5,33 @@
         url('OpenSans.ttf') format('truetype');
 }
 
+@media screen and (prefers-reduced-motion: reduce) {  
+    * {
+      /* Very short durations means JavaScript that relies on events still works */
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+}
+
+@media (prefers-contrast: high) {
+    body {
+        background-color: var(--high-contrast);
+    }
+}
+
+/* Work in progress
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-theme);
+        color: var(--high-contrast)
+    }
+} */
+
 :root {
     --title-color: blue;
+    --high-contrast: white;
+    --dark-theme: black;
 }
 
 body {
@@ -61,7 +86,63 @@ svg :hover {
     translateY(-1vh)
 }
 
-fieldset {
-    visibility: visible;
-    transition: all 2s;
+form button {
+    opacity: 0;
+    transition-timing-function: ease-in;
+    transition: all 0.2s;
+}
+
+form:hover button {
+    opacity: 1;
+}
+
+canvas {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.experimental:hover #canvas {
+    opacity: 1;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card section:nth-of-type(1){
+    text-align: left;
+    padding-left: 10vw;
+}
+
+.card section:nth-of-type(2){
+    text-align: right;
+    padding-right: 10vw;
+}
+
+.card section:nth-of-type(3){
+    text-align: left;
+    padding-left: 10vw;
+}
+
+ol {
+    list-style: inside;
+}
+
+@media screen and (max-width: 768px) {
+    .card section:nth-of-type(1){
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    .card section:nth-of-type(2){
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .card section:nth-of-type(3){
+        text-align: center;
+        padding-left: 0;
+    }
 }
