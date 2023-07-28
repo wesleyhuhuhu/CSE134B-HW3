@@ -82,6 +82,20 @@ nav ul li {
     text-align: center;
 }
 
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
 span {
     color: var(--title-color);
 }
@@ -223,5 +237,21 @@ ol {
     }
     form button {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        scale: 5;
+        margin-top: 2%;
+        margin-left: 88%;
+    }
+    h1 {
+        margin-top: 5vh;
+    }
+    nav {
+        display: none;
     }
 }
